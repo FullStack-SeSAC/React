@@ -1,6 +1,6 @@
 import './App.css';
 import ClassComponent from './classComponent.';
-import FunctionComponent from './functionComponent';
+import FunctionComponent from './FunctionComponent';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <hr />
 
 
-      <FunctionComponent />
+      <FunctionComponent  />
       <FunctionComponent name = 'Ranikun' />
     </div>
   );
