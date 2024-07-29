@@ -10,6 +10,9 @@ function App() {
       <ClassComponent name='Ranikun' />
       <hr />
 
+
+      <FunctionComponent />
+      <FunctionComponent name = 'Ranikun' />
     </div>
   );
 }
