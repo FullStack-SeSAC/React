@@ -23,7 +23,7 @@ Button.defaultProps = {
     link: 'https://www.naver.com'
 }
 
-Button.PropTypes = {
+Button.propTypes = {
     children: PropTypes.string,
     link: PropTypes.string
 }
