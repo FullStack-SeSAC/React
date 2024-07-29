@@ -1,4 +1,5 @@
 import './App.css';
+import Button from './Button';
 import ClassComponent from './classComponent.';
 import FunctionComponent from './FunctionComponent';
 
@@ -13,6 +14,9 @@ function App() {
 
       <FunctionComponent  />
       <FunctionComponent name = 'Ranikun' />
+      <hr />
+
+      <Button children='Google' link="https://www.google.com" />
     </div>
   );
 }
