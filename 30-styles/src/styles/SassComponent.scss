@@ -15,10 +15,10 @@
 // $breakpoint-sm: 360px;
 
 // #3. mixin (함수) 선언(정의)
-// @mixin box($size) {
-//     width: $size;
-//     height: $size;
-// }
+@mixin box($size) {
+  width: $size;
+  height: $size;
+}
 
 // #2. 중첩 - 부모 자식 표현 가능.
 .container {

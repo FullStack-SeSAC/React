@@ -4,6 +4,7 @@ import "./styles/SassComponent.scss";
 export default function SassComponent() {
   return (
     <div>
+      <h1>Sass Component</h1>
       <div className="container">
         <div className="box red">1</div>
         <div className="box orange">2</div>

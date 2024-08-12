@@ -1,16 +1,18 @@
 import "./styles/App.css";
 import SassComponent from "./SassComponent.js";
 import StyledComponent from "./StyledComponent.js";
+import CssModuleComponets from "./CssModuleComponents.js";
 
 function App() {
   return (
     <div className="App">
-      <h1>React Styling</h1>
-
       <SassComponent />
       <hr />
 
       <StyledComponent />
+      <hr />
+
+      <CssModuleComponets />
     </div>
   );
 }
