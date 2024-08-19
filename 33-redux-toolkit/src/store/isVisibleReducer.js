@@ -1,18 +1,17 @@
-// #1. 액션 타입 상수 정의
-const CHANGE_VISIBILITY = "isVisible/CHANGE";
+import { createSlice } from "@reduxjs/toolkit";
 
-// #2. 액션 생성자
-export const changeVisibility = () => ({
-  type: CHANGE_VISIBILITY,
+// 슬라이스 정의
+const isVisibleSlice = createSlice({
+  name: "isVisible",
+  initialState: true,
+  reducers: {
+    // 상태를 반전시키는 액션
+    changVisiblility: (state) => {
+      return !state;
+    },
+  },
 });
 
-// 초기값 설정
-const initialState = true;
+export const { changVisiblility } = isVisibleSlice.actions;
 
-// 리듀서 설정
-const isVisibleReducer = (state = initialState, action) => {
-  if (action.type === CHANGE_VISIBILITY) return !state;
-  return state;
-};
-
-export default isVisibleReducer;
+export default isVisibleSlice.reducer;
