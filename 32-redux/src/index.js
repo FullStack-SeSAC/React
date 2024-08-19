@@ -16,7 +16,10 @@ const store = createStore(counterReducer);
 
 root.render(
   <React.StrictMode>
-    <Provider>
+    {/* React와 Redux 연결 */}
+    {/* 애플리케이션의 모든 컴포넌트가 Redux 스토어에 접근 가능 */}
+    <Provider store={store}>
+      {/* Redux Provider로 스토어를 앱에 주입 */}
       <App />
       <hr />
       <App2 />
