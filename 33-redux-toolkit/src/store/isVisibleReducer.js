@@ -6,12 +6,12 @@ const isVisibleSlice = createSlice({
   initialState: true,
   reducers: {
     // 상태를 반전시키는 액션
-    changVisiblility: (state) => {
+    changeVisibility: (state) => {
       return !state;
     },
   },
 });
 
-export const { changVisiblility } = isVisibleSlice.actions;
+export const { changeVisibility } = isVisibleSlice.actions;
 
 export default isVisibleSlice.reducer;
